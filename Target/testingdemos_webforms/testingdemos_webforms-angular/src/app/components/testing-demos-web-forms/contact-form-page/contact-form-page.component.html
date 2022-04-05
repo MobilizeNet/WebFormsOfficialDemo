@@ -1,0 +1,89 @@
+<div *ngIf='model' class='TestingDemos_WebForms_ContactForm'>
+   <ng-template #MainContent let-model='model'>
+      <div class="container cuerpo">
+         <div class="row contacto">
+            <div class="col-md-12">
+               <h1>
+                  Contact Form
+               </h1>
+               <wm-validation-summary id="ValidationSummary1" [model]="model.ValidationSummary1" class="ValidationSummary1 validar">
+               </wm-validation-summary>
+               <div class="form-group">
+                  <wm-label id="Label1" [model]="model.Label1" class="Label1">
+                     Names: 
+                  </wm-label>
+                  <wm-asp-textbox id="txtnombres" [model]="model.txtnombres" class="txtnombres form-control">
+                  </wm-asp-textbox>
+                  <br>
+                  <wm-required-field-validator id="RequiredFieldValidator1" [model]="model.RequiredFieldValidator1" class="RequiredFieldValidator1 validar" text="*">
+                  </wm-required-field-validator>
+                  <wm-regular-expression-validator id="RegularExpressionValidator2" [model]="model.RegularExpressionValidator2" class="RegularExpressionValidator2 validar" text="Names only must have letters">
+                  </wm-regular-expression-validator>
+
+               </div>
+               <div class="form-group">
+                  <wm-label id="Label2" [model]="model.Label2" class="Label2">
+                     Last Names: 
+                  </wm-label>
+                  <wm-asp-textbox id="txtapellidos" [model]="model.txtapellidos" class="txtapellidos form-control">
+                  </wm-asp-textbox>
+                  <br>
+                  <wm-required-field-validator id="RequiredFieldValidator2" [model]="model.RequiredFieldValidator2" class="RequiredFieldValidator2 validar" text="*">
+                  </wm-required-field-validator>
+                  <wm-regular-expression-validator id="RegularExpressionValidator3" [model]="model.RegularExpressionValidator3" class="RegularExpressionValidator3 validar" text="The last names must only contains letters">
+                  </wm-regular-expression-validator>
+
+               </div>
+               <div class="form-group">
+                  <wm-label id="Label3" [model]="model.Label3" class="Label3">
+                     Email: 
+                  </wm-label>
+                  <wm-asp-textbox id="txtemail" [model]="model.txtemail" class="txtemail form-control">
+                  </wm-asp-textbox>
+                  <br>
+                  <wm-required-field-validator id="RequiredFieldValidator3" [model]="model.RequiredFieldValidator3" class="RequiredFieldValidator3 validar" text="*">
+                  </wm-required-field-validator>
+                  <wm-regular-expression-validator id="RegularExpressionValidator1" [model]="model.RegularExpressionValidator1" class="RegularExpressionValidator1 validar" text="not valid format">
+                  </wm-regular-expression-validator>
+
+               </div>
+               <div class="form-group">
+                  <wm-label id="Label4" [model]="model.Label4" class="Label4">
+                     Phone number: 
+                  </wm-label>
+                  <wm-asp-textbox id="txttelefono" [model]="model.txttelefono" class="txttelefono form-control">
+                  </wm-asp-textbox>
+                  <br>
+                  <wm-required-field-validator id="RequiredFieldValidator4" [model]="model.RequiredFieldValidator4" class="RequiredFieldValidator4 validar" text="*">
+                  </wm-required-field-validator>
+                  <wm-regular-expression-validator id="RegularExpressionValidator4" [model]="model.RegularExpressionValidator4" class="RegularExpressionValidator4 validar" text="The phone number must only contains numbers">
+                  </wm-regular-expression-validator>
+
+               </div>
+               <div class="form-group">
+                  <wm-label id="Label5" [model]="model.Label5" class="Label5">
+                     Message: 
+                  </wm-label>
+                  <wm-asp-textbox id="txtmensaje" [model]="model.txtmensaje" class="txtmensaje form-control">
+                  </wm-asp-textbox>
+                  <br>
+                  <wm-required-field-validator id="RequiredFieldValidator5" [model]="model.RequiredFieldValidator5" class="RequiredFieldValidator5 validar" text="*">
+                  </wm-required-field-validator>
+
+               </div>
+               <wm-button id="enviar" [model]="model.enviar" class="enviar btn btn-default" text="Send" [eventsContext]="this" wmClientClick>
+               </wm-button>
+
+            </div>
+            <wm-label id="message" [model]="model.message" class="message mensaje" forecolor="Blue">
+               Label
+            </wm-label>
+            <br>
+
+         </div>
+
+      </div>
+
+   </ng-template>
+
+</div>

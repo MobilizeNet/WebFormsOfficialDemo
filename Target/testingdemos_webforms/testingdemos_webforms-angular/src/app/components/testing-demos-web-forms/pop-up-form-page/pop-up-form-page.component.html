@@ -1,0 +1,79 @@
+<div *ngIf='model' class='TestingDemos_WebForms_PopUpForm'>
+   <ng-template #MainContent let-model='model'>
+      <div class="spacePrincipal">
+         <div style="margin-left:39%; padding-top:20px;">
+            <wm-button id="Button1" [model]="model.Button1" class="Button1" text="Open the Modal PopUp" [eventsContext]="this" wmClientClick>
+            </wm-button>
+            <div style="margin-top: 2%;text-align:center">
+               <wm-label id="informationLabel" [model]="model.informationLabel" class="informationLabel">
+                  This was the information sent: 
+               </wm-label>
+
+            </div>
+            <div style="margin-top: 2%;text-align:center">
+               <wm-label id="nameSentLabel" [model]="model.nameSentLabel" class="nameSentLabel">
+                  name
+               </wm-label>
+
+            </div>
+            <div style="margin-top: 2%;text-align:center">
+               <wm-label id="genderSentLabel" [model]="model.genderSentLabel" class="genderSentLabel">
+                  gender
+               </wm-label>
+
+            </div>
+            <div style="margin-top: 2%;text-align:center">
+               <wm-label id="marriedSentLabel" [model]="model.marriedSentLabel" class="marriedSentLabel">
+                  married
+               </wm-label>
+
+            </div>
+            <div style="margin-top: 2%;text-align:center">
+               <wm-label id="citySentLabel" [model]="model.citySentLabel" class="citySentLabel">
+                  city
+               </wm-label>
+
+            </div>
+            <wm-asp-panel id="Panel1" style="display: none" [model]="model.Panel1" class="Panel1">
+               <div>
+                  <wm-label id="nameLabel" [model]="model.nameLabel" class="nameLabel">
+                     Name:
+                  </wm-label>
+                  <wm-asp-textbox id="nameInput" [model]="model.nameInput" class="nameInput">
+                  </wm-asp-textbox>
+
+               </div>
+               <wm-label id="genderLabel" [model]="model.genderLabel" class="genderLabel">
+                  Gender:
+               </wm-label>
+               <wm-dropdown-list id="genderDropDown" [model]="model.genderDropDown" class="genderDropDown">
+               </wm-dropdown-list>
+               <wm-label id="MarriedLabel" [model]="model.MarriedLabel" class="MarriedLabel">
+                  Married?
+               </wm-label>
+               <wm-checkbox id="MarriedCheckBox" [model]="model.MarriedCheckBox" class="MarriedCheckBox">
+               </wm-checkbox>
+               <div>
+                  <wm-label id="CityLabel" [model]="model.CityLabel" class="CityLabel">
+                     City:
+                  </wm-label>
+                  <wm-asp-textbox id="CityInput" [model]="model.CityInput" class="CityInput">
+                  </wm-asp-textbox>
+
+               </div>
+               <wm-button id="Button2" [model]="model.Button2" class="Button2" text="Cancel" [eventsContext]="this" wmClientClick>
+               </wm-button>
+               <wm-button id="Button3" [model]="model.Button3" class="Button3" text="Send" [eventsContext]="this" wmClientClick>
+               </wm-button>
+
+            </wm-asp-panel>
+            <wm-modalpopup-extender id="ModalPopupExtender1" [model]="model.ModalPopupExtender1" class="ModalPopupExtender1">
+            </wm-modalpopup-extender>
+
+         </div>
+
+      </div>
+
+   </ng-template>
+
+</div>

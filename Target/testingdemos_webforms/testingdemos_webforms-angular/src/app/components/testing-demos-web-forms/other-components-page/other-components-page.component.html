@@ -1,0 +1,122 @@
+<div *ngIf='model' class='TestingDemos_WebForms_OtherComponents'>
+   <ng-template #MainContent let-model='model'>
+      <div class="spacePrincipal">
+         <div>
+            <h4 style="color:Navy">
+               BoundField, TemplateField, hyperlinkfield, commandfield Example
+            </h4>
+            <div>
+               <wm-label id="ProductNameLabel" [model]="model.ProductNameLabel" class="ProductNameLabel">
+                  Product name:
+               </wm-label>
+               <wm-asp-textbox id="ProductName" [model]="model.ProductName" class="ProductName">
+               </wm-asp-textbox>
+               <wm-required-field-validator id="RequiredFieldValidator1" [model]="model.RequiredFieldValidator1" class="RequiredFieldValidator1 validar" text="*">
+               </wm-required-field-validator>
+
+            </div>
+            <div>
+               <wm-label id="ProductDetailsLabel" [model]="model.ProductDetailsLabel" class="ProductDetailsLabel">
+                  Product details:
+               </wm-label>
+               <wm-asp-textbox id="ProductDetail" [model]="model.ProductDetail" class="ProductDetail">
+               </wm-asp-textbox>
+               <wm-required-field-validator id="RequiredFieldValidator2" [model]="model.RequiredFieldValidator2" class="RequiredFieldValidator2 validar" text="*">
+               </wm-required-field-validator>
+
+            </div>
+            <div>
+               <wm-label id="ProductCategory" [model]="model.ProductCategory" class="ProductCategory">
+                  Product category:
+               </wm-label>
+               <wm-dropdown-list id="DropDownList1" [model]="model.DropDownList1" class="DropDownList1">
+               </wm-dropdown-list>
+
+            </div>
+            <div>
+               <wm-label id="ProductNewLabel" [model]="model.ProductNewLabel" class="ProductNewLabel">
+                  New?
+               </wm-label>
+               <wm-checkbox id="ProductNew" [model]="model.ProductNew" class="ProductNew">
+               </wm-checkbox>
+
+            </div>
+            <div>
+               <wm-label id="ProductOdetailsLabel" [model]="model.ProductOdetailsLabel" class="ProductOdetailsLabel">
+                  Product order details :
+               </wm-label>
+               <wm-asp-textbox id="ProductOdetailsInput" [model]="model.ProductOdetailsInput" class="ProductOdetailsInput">
+               </wm-asp-textbox>
+               <wm-required-field-validator id="RequiredFieldValidator3" [model]="model.RequiredFieldValidator3" class="RequiredFieldValidator3 validar" text="*">
+               </wm-required-field-validator>
+
+            </div>
+            <div class="centerDivButtons">
+               <wm-button id="AddButton" [model]="model.AddButton" class="AddButton" text="Add new product" [eventsContext]="this" wmClientClick>
+               </wm-button>
+
+            </div>
+            <div style="margin-left: auto; margin-right: auto; text-align: center;">
+               <wm-validation-summary id="valSum" [model]="model.valSum" class="valSum" forecolor="Red">
+               </wm-validation-summary>
+
+            </div>
+            <div>
+               <wm-gridview id="GridView1" [model]="model.GridView1" class="GridView1">
+                  <wm-gridview-columns>
+                     <wm-bound-field>
+                     </wm-bound-field>
+                     <wm-bound-field>
+                     </wm-bound-field>
+                     <wm-template-field>
+                        <ng-template let-model #ItemTemplate>
+                           <wm-label id="Label1" [model]="model.Label1" class="Label1">
+                           </wm-label>
+
+                        </ng-template>
+
+                     </wm-template-field>
+                     <wm-template-field>
+                        <ng-template let-model #ItemTemplate>
+                           <wm-dropdown-list id="DropDownList2" [model]="model.DropDownList2" class="DropDownList2">
+                           </wm-dropdown-list>
+                           <wm-stub data-missing-type='asp:HiddenField' id="HiddenId" [model]="model.HiddenId">
+                           </wm-stub>
+
+                        </ng-template>
+
+                     </wm-template-field>
+                     <wm-template-field>
+                        <ng-template let-model #ItemTemplate>
+                           <wm-checkbox id="isNewCheckbox" [model]="model.isNewCheckbox" class="isNewCheckbox">
+                           </wm-checkbox>
+
+                        </ng-template>
+
+                     </wm-template-field>
+                     <wm-hyperlink-field>
+                     </wm-hyperlink-field>
+                     <wm-command-field>
+                     </wm-command-field>
+                     <wm-template-field>
+                        <ng-template let-model #ItemTemplate>
+                           <wm-button id="SaveButton" [model]="model.SaveButton" class="SaveButton" text="Save" [eventsContext]="this" wmClientClick>
+                           </wm-button>
+
+                        </ng-template>
+
+                     </wm-template-field>
+
+                  </wm-gridview-columns>
+
+               </wm-gridview>
+
+            </div>
+
+         </div>
+
+      </div>
+
+   </ng-template>
+
+</div>

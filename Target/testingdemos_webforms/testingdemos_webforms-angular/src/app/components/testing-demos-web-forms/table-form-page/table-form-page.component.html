@@ -1,0 +1,92 @@
+<div *ngIf='model' class='TestingDemos_WebForms_TableForm'>
+   <ng-template #MainContent let-model='model'>
+      <div class="spacePrincipal">
+         <div style="margin-left: auto; margin-right: auto; text-align: center;">
+            <wm-label id="titleLabel" [model]="model.titleLabel" class="titleLabel">
+               Table test
+            </wm-label>
+
+         </div>
+         <div>
+            <table>
+               <tr>
+                  <td style="padding-top:23px;">
+                     Name
+                  </td>
+                  <td>
+                     <wm-asp-textbox id="txtName" [model]="model.txtName" class="txtName">
+                     </wm-asp-textbox>
+                     <wm-required-field-validator id="rev1" [model]="model.rev1" class="rev1">
+                     </wm-required-field-validator>
+
+                  </td>
+
+               </tr>
+               <tr>
+                  <td style="padding-top:23px;">
+                     Age
+                  </td>
+                  <td>
+                     <wm-asp-textbox id="txtAge" [model]="model.txtAge" class="txtAge">
+                     </wm-asp-textbox>
+                     <wm-custom-validator id="cutomeValidator" [model]="model.cutomeValidator" class="cutomeValidator" forecolor="Red">
+                     </wm-custom-validator>
+
+                  </td>
+
+               </tr>
+               <tr>
+                  <td style="padding-top:23px;">
+                     Mobile
+                  </td>
+                  <td>
+                     <wm-asp-textbox id="txtMobile" [model]="model.txtMobile" class="txtMobile">
+                     </wm-asp-textbox>
+                     <wm-label id="labelMobile2" [model]="model.labelMobile2" class="labelMobile2">
+                        Confirm mobile
+                     </wm-label>
+                     <wm-asp-textbox id="txtMobile2" [model]="model.txtMobile2" class="txtMobile2">
+                     </wm-asp-textbox>
+                     <wm-compare-validator id="equalValidator" [model]="model.equalValidator" class="equalValidator" forecolor="Red">
+                     </wm-compare-validator>
+
+                  </td>
+
+               </tr>
+               <tr>
+                  <td style="padding-top:20px;">
+                     Email ID
+                  </td>
+                  <td>
+                     <wm-asp-textbox id="txtEmailID" [model]="model.txtEmailID" class="txtEmailID">
+                     </wm-asp-textbox>
+
+                  </td>
+
+               </tr>
+               <tr>
+                  <td rowspan="1" style="padding-top:23px;">
+                     <wm-button id="btnSubmit" [model]="model.btnSubmit" class="btnSubmit" text="Submit" [eventsContext]="this" wmClientClick>
+                     </wm-button>
+
+                  </td>
+
+               </tr>
+
+            </table>
+            <div style="margin-left: auto; margin-right: auto; text-align: center;">
+               <wm-validation-summary id="valSum" [model]="model.valSum" class="valSum">
+               </wm-validation-summary>
+               <wm-label id="successfulMessage" [model]="model.successfulMessage" class="successfulMessage">
+                  Form sent ;)
+               </wm-label>
+
+            </div>
+
+         </div>
+
+      </div>
+
+   </ng-template>
+
+</div>

@@ -1,0 +1,58 @@
+<div *ngIf='model' class='TestingDemos_WebForms_ProductDetails'>
+   <ng-template #MainContent let-model='model'>
+      <div class="spacePrincipal">
+         <div style="text-align:center">
+            <h4>
+               <strong>
+                  Product information
+               </strong>
+
+            </h4>
+
+         </div>
+         <div>
+            <wm-label id="idLabel" [model]="model.idLabel" class="idLabel">
+               Product details:
+            </wm-label>
+            <wm-label id="idLabelInfo" [model]="model.idLabelInfo" class="idLabelInfo">
+            </wm-label>
+
+         </div>
+         <div>
+            <wm-label id="ProductNameLabel" [model]="model.ProductNameLabel" class="ProductNameLabel">
+               Product name: 
+            </wm-label>
+            <wm-label id="ProductNameInfoLabel" [model]="model.ProductNameInfoLabel" class="ProductNameInfoLabel">
+            </wm-label>
+
+         </div>
+         <div>
+            <wm-label id="ProductDetailLabel" [model]="model.ProductDetailLabel" class="ProductDetailLabel">
+               Product details: 
+            </wm-label>
+            <wm-label id="ProductDetailInfoLabel" [model]="model.ProductDetailInfoLabel" class="ProductDetailInfoLabel">
+            </wm-label>
+
+         </div>
+         <div>
+            <wm-label id="ProductCategoryLabel" [model]="model.ProductCategoryLabel" class="ProductCategoryLabel">
+               Product category: 
+            </wm-label>
+            <wm-label id="ProductCategoryInfoLabel" [model]="model.ProductCategoryInfoLabel" class="ProductCategoryInfoLabel">
+            </wm-label>
+
+         </div>
+         <div>
+            <wm-label id="ProductoDetailsLabel" [model]="model.ProductoDetailsLabel" class="ProductoDetailsLabel">
+               Order details: 
+            </wm-label>
+            <wm-label id="ProductoDetailsInfoLabel" [model]="model.ProductoDetailsInfoLabel" class="ProductoDetailsInfoLabel">
+            </wm-label>
+
+         </div>
+
+      </div>
+
+   </ng-template>
+
+</div>

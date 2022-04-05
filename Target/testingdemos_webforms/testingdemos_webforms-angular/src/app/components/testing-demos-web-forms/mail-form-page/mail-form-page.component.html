@@ -1,0 +1,47 @@
+<div *ngIf='model' class='TestingDemos_WebForms_MailForm'>
+   <ng-template #MainContent let-model='model'>
+      <div style="background-color:#F4F4F4; margin-top:6%;text-align:center" runat="server">
+         <hr>
+         <div>
+            <wm-label id="Label4" [model]="model.Label4" class="Label4">
+               Name:
+            </wm-label>
+            <!-- Manual Change for bug 410749 -->
+            <wm-asp-textbox id="TextBox1" [model]="model.TextBox1" class="TextBox1">
+            </wm-asp-textbox>
+
+         </div>
+         <div style="margin-top: 2%;text-align:center">
+            <wm-label id="Label1" [model]="model.Label1" class="Label1">
+               Email:
+            </wm-label>
+            <wm-asp-textbox id="TextBox2" [model]="model.TextBox2" class="TextBox2">
+            </wm-asp-textbox>
+
+         </div>
+         <div style="margin-top: 2%;text-align:center">
+            <wm-label id="Label2" [model]="model.Label2" class="Label2">
+               Message:
+            </wm-label>
+            <wm-asp-textbox id="TextBox3" [model]="model.TextBox3" class="TextBox3">
+            </wm-asp-textbox>
+
+         </div>
+         <div style="margin-top: 2%; margin-bottom:2%; text-align:center; margin-left:1%">
+            <wm-button id="Button1" [model]="model.Button1" class="Button1" text="Send your message" [eventsContext]="this" wmClientClick>
+            </wm-button>
+
+         </div>
+         <div style="margin-top: 2%;">
+            <wm-label id="Label3" [model]="model.Label3" class="Label3">
+               Label
+            </wm-label>
+
+         </div>
+         <hr>
+
+      </div>
+
+   </ng-template>
+
+</div>

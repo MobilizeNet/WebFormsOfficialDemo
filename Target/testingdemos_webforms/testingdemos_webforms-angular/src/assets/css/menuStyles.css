@@ -1,0 +1,50 @@
+﻿/* Create three equal columns that floats next to each other */
+.columnMenu {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+}
+
+.columnMenuCheckbox {
+    float: left ;
+    width: 50%;
+    padding: 10px;
+}
+
+/* Clear floats after the columns */
+.rowMenu:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.rowButtons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.columnButtons {
+    padding: 10px;
+}
+
+.spacePrincipal {
+    margin-top: 6%;
+    background-color: #eeeeee;
+}
+
+.spaceSecondary {
+    margin-top: 1%;
+    background-color: #eeeeee;
+}
+
+.centerDivButtons {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.takeItcenter {
+    text-align: "center";
+}
+

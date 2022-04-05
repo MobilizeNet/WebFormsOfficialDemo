@@ -1,0 +1,78 @@
+<div *ngIf='model' class='TestingDemos_WebForms_DataListForm'>
+   <ng-template #MainContent let-model='model'>
+      <div class="spacePrincipal">
+         <div style="padding-top: 2%;text-align:left">
+            <wm-label id="Label1" [model]="model.Label1" class="Label1">
+               Id:
+            </wm-label>
+            <wm-asp-textbox id="idTextbox" [model]="model.idTextbox" class="idTextbox">
+            </wm-asp-textbox>
+
+         </div>
+         <div style="padding-top: 2%;text-align:left">
+            <wm-label id="Label2" [model]="model.Label2" class="Label2">
+               Name:
+            </wm-label>
+            <wm-asp-textbox id="nameTextbox" [model]="model.nameTextbox" class="nameTextbox">
+            </wm-asp-textbox>
+
+         </div>
+         <div style="padding-top: 2%;text-align:left">
+            <wm-label id="Label3" [model]="model.Label3" class="Label3">
+               Email:
+            </wm-label>
+            <wm-asp-textbox id="emailTextbox" [model]="model.emailTextbox" class="emailTextbox">
+            </wm-asp-textbox>
+
+         </div>
+         <div style="padding-top: 2%;text-align:center">
+            <wm-button id="Button1" [model]="model.Button1" class="Button1" text="Add" [eventsContext]="this" wmClientClick>
+            </wm-button>
+
+         </div>
+         <div class="centerDivButtons">
+            <wm-data-list [model]="model.DataList1">
+               <ng-template let-model let-templateClass="templateClass" #ItemTemplate>
+                  <div [class]="templateClass">
+                     <table cellpadding="2" cellspacing="0" border="1" style="width: 300px; height: 100px;   
+                    border: dashed 2px #04AFEF; background-color: #FFFFFF">
+                        <tr>
+                           <td>
+                              <b>
+                                 Id:
+                              </b>
+                              <wm-label id="Label5" [model]="model.Label5" class="Label5">
+                              </wm-label>
+                              <br>
+                              <b>
+                                 Name:
+                              </b>
+                              <wm-label id="Label4" [model]="model.Label4" class="Label4">
+                              </wm-label>
+                              <br>
+                              <b>
+                                 Email:
+                              </b>
+                              <wm-label id="Label7" [model]="model.Label7" class="Label7">
+                              </wm-label>
+                              <br>
+
+                           </td>
+
+                        </tr>
+
+                     </table>
+
+                  </div>
+
+               </ng-template>
+
+            </wm-data-list>
+
+         </div>
+
+      </div>
+
+   </ng-template>
+
+</div>

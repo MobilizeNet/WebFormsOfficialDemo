@@ -1,0 +1,63 @@
+<div *ngIf='model' class='TestingDemos_WebForms__Default'>
+   <ng-template #MainContent let-model='model'>
+      <div class="jumbotron" style="margin-top: 6%;">
+         <h1>
+            Web Forms
+         </h1>
+         <p class="lead">
+            This is a basic demo application in order to test several features of WebForms to WebMap Conversion. Please feel to add more testing content.
+         </p>
+
+      </div>
+      <div class="row">
+         <div class="col-md-4">
+            <h2>
+               Basic Send Mail Form
+            </h2>
+            <p>
+               This is a very basic form that contains controls like: labels, textboxes and buttons.
+            </p>
+            <p>
+               <wm-alink class="btn btn-default" runat="server" [Target]="'TestingDemos_WebForms.MailForm'" [model]="model">
+                  Go to Form &raquo;
+               </wm-alink>
+
+            </p>
+
+         </div>
+         <div class="col-md-4">
+            <h2>
+               Contact to Travel Agency
+            </h2>
+            <p>
+               This is a basic form that test some control and adittional integrations with master pages.
+            </p>
+            <p>
+               <wm-alink class="btn btn-default" runat="server" [Target]="'TestingDemos_WebForms.ContactForm'" [model]="model">
+                  Go to Form &raquo;
+               </wm-alink>
+
+            </p>
+
+         </div>
+         <div class="col-md-4">
+            <h2>
+               Look for our offices
+            </h2>
+            <p>
+               This is a basic form that test some control and adittional integrations with master pages.
+            </p>
+            <p>
+               <wm-alink class="btn btn-default" runat="server" [Target]="'TestingDemos_WebForms.TableForm'" [model]="model">
+                  Go to Form &raquo;
+               </wm-alink>
+
+            </p>
+
+         </div>
+
+      </div>
+
+   </ng-template>
+
+</div>

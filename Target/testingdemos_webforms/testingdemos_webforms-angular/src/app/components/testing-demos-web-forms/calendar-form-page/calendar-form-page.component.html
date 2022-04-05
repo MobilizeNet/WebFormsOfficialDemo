@@ -1,0 +1,51 @@
+<div *ngIf='model' class='TestingDemos_WebForms_CalendarForm'>
+   <ng-template #MainContent let-model='model'>
+      <div class="spacePrincipal">
+         <div style="margin-left:39%; padding-top:20px;">
+            <wm-asp-textbox id="TextBox1" [model]="model.TextBox1" class="TextBox1">
+            </wm-asp-textbox>
+            <wm-ajax-calendar id="CalendarExtender1" [model]="model.CalendarExtender1" class="CalendarExtender1">
+            </wm-ajax-calendar>
+
+         </div>
+         <div class="rowButtons">
+            <div class="columnButtons">
+               <div>
+                  <wm-button id="Button1" [model]="model.Button1" class="Button1" text="Change date" [eventsContext]="this" wmClientClick>
+                  </wm-button>
+
+               </div>
+
+            </div>
+            <div class="columnButtons">
+               <div>
+                  <wm-button id="Button2" [model]="model.Button2" class="Button2" text="Clear input" [eventsContext]="this" wmClientClick>
+                  </wm-button>
+
+               </div>
+
+            </div>
+            <div class="columnButtons">
+               <div>
+                  <wm-button id="Button3" [model]="model.Button3" class="Button3" text="Enable/Disable" [eventsContext]="this" wmClientClick>
+                  </wm-button>
+
+               </div>
+
+            </div>
+            <div class="columnButtons">
+               <div>
+                  <wm-button id="Button4" [model]="model.Button4" class="Button4" text="Show calendar" [eventsContext]="this" wmClientClick>
+                  </wm-button>
+
+               </div>
+
+            </div>
+
+         </div>
+
+      </div>
+
+   </ng-template>
+
+</div>

@@ -1,0 +1,80 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <TypeScriptToolsVersion>2.5</TypeScriptToolsVersion>
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+        <StartupObject>WebSite.Startup</StartupObject>
+        <AssemblyName>TestingDemos_WebForms</AssemblyName>
+        <ProjectGuid>e334ab19-a45f-47cd-a65b-2e6443255020</ProjectGuid>
+        <Deterministic>False</Deterministic>
+        <LangVersion>7.3</LangVersion>
+    </PropertyGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\Stubs\Stubs.csproj"/>
+    </ItemGroup>
+    <ItemGroup>
+            <PackageReference Include="Microsoft.AspNetCore.SignalR" Version="1.1.0" />
+        <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.22" />
+            <PackageReference Include="Microsoft.Extensions.PlatformAbstractions" Version="1.1.0" />
+        <PackageReference Include="Microsoft.VisualBasic" Version="10.4.0-preview.18571.3" />
+        <PackageReference Include="Mobilize.Extensions.Logging.RollingFile" Version="2.1.1-rc0027" />
+        <PackageReference Include="Mobilize.Web.BundleBasic.WebForms.All" Version="1.8.3"/>
+        <PackageReference Include="Mobilize.Weaving.WebMapExtensions.All" Version="7.0.36"/>
+        <PackageReference Include="Mobilize.Weaving" Version="2.0.4"/>
+        <PackageReference Include="Mobilize.WebMap.CoreServices.All" Version="7.0.39"/>
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="Views\**\*.cshtml" />
+        <Content Include="Views\**\*.config" />
+        <Compile Remove="testingdemos_webforms-angular\**" />
+        <Content Remove="testingdemos_webforms-angular\**" />
+        <EmbeddedResource Remove="testingdemos_webforms-angular\**" />
+        <None Remove="testingdemos_webforms-angular\**" />
+		        <Compile Remove="..\Stubs\**" />
+		<Content Remove="..\Stubs\**" />
+		<EmbeddedResource Remove="..\Stubs\**" />
+		<None Remove="..\Stubs\**" />
+    </ItemGroup>
+    <ItemGroup>
+      <Reference Include="AjaxControlToolkit">
+      <HintPath>..\lib\AjaxControlToolkit.dll</HintPath>
+      </Reference>
+      <Reference Include="Antlr3.Runtime">
+      <HintPath>..\lib\Antlr3.Runtime.dll</HintPath>
+      </Reference>
+      <Reference Include="AspNet.ScriptManager.bootstrap">
+      <HintPath>..\lib\AspNet.ScriptManager.bootstrap.dll</HintPath>
+      </Reference>
+      <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>..\lib\AspNet.ScriptManager.jQuery.dll</HintPath>
+      </Reference>
+      <Reference Include="Microsoft.AspNet.FriendlyUrls">
+      <HintPath>..\lib\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+      </Reference>
+      <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <HintPath>..\lib\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+      </Reference>
+      <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\lib\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      </Reference>
+      <Reference Include="Microsoft.ScriptManager.MSAjax">
+      <HintPath>..\lib\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+      </Reference>
+      <Reference Include="Microsoft.ScriptManager.WebForms">
+      <HintPath>..\lib\Microsoft.ScriptManager.WebForms.dll</HintPath>
+      </Reference>
+      <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\lib\Microsoft.Web.Infrastructure.dll</HintPath>
+      </Reference>
+      <Reference Include="Newtonsoft.Json">
+      <HintPath>..\lib\Newtonsoft.Json.dll</HintPath>
+      </Reference>
+      <Reference Include="System.Web.Optimization">
+      <HintPath>..\lib\System.Web.Optimization.dll</HintPath>
+      </Reference>
+      <Reference Include="WebGrease">
+      <HintPath>..\lib\WebGrease.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+</Project>
+

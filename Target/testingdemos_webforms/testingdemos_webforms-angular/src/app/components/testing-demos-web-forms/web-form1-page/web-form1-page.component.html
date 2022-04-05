@@ -1,0 +1,194 @@
+<div *ngIf='model' class='TestingDemos_WebForms_WebForm1'>
+   <ng-template #MainContent let-model='model'>
+      <div class="spacePrincipal">
+         <div class="rowMenu">
+            <div class="columnMenu" id="CheckBoxColumn">
+               <div>
+                  <h3 style="text-align:center">
+                     <strong>
+                        Checkbox
+                     </strong>
+
+                  </h3>
+
+               </div>
+               <p>
+                  In this section you can test the checkbox component.
+               </p>
+               <p style="float:right">
+                  <wm-alink class="btn btn-default" runat="server" [Target]="'TestingDemos_WebForms.CheckBoxForm'" [model]="model">
+                     Go to Form &raquo;
+                  </wm-alink>
+
+               </p>
+
+            </div>
+            <div class="columnMenu" id="LinkButtonColumn">
+               <div>
+                  <h3 style="text-align:center">
+                     <strong>
+                        LinkButton
+                     </strong>
+
+                  </h3>
+
+               </div>
+               <p>
+                  In this section you can test the<wm-link-button id="LinkButton1" [model]="model.LinkButton1" class="LinkButton1" text="Link Button" [eventsContext]="this" wmClientClick>
+                  </wm-link-button>
+                  component.
+               </p>
+               <p style="float:right">
+                  <wm-alink class="btn btn-default" runat="server" [Target]="'TestingDemos_WebForms.Contact'" [model]="model">
+                     Go to Form &raquo;
+                  </wm-alink>
+
+               </p>
+
+            </div>
+            <div class="columnMenu" id="GridviewColumn">
+               <div>
+                  <h3 style="text-align:center">
+                     <strong>
+                        Gridview
+                     </strong>
+
+                  </h3>
+
+               </div>
+               <p>
+                  In this section you can test the gridview component.
+               </p>
+               <p style="float:right">
+                  <wm-alink class="btn btn-default" runat="server" [Target]="'TestingDemos_WebForms.GridViewForm'" [model]="model">
+                     Go to Form &raquo;
+                  </wm-alink>
+
+               </p>
+
+            </div>
+
+         </div>
+
+      </div>
+      <div class="spaceSecondary">
+         <div class="rowMenu">
+            <div class="columnMenu" id="DropDownListColumn">
+               <div>
+                  <h3 style="text-align:center">
+                     <strong>
+                        DropDownList
+                     </strong>
+
+                  </h3>
+
+               </div>
+               <p>
+                  In this section you can test the DropDownList component.
+               </p>
+               <p style="float:right">
+                  <wm-alink class="btn btn-default" runat="server" [Target]="'TestingDemos_WebForms.DropDownListForm'" [model]="model">
+                     Go to Form &raquo;
+                  </wm-alink>
+
+               </p>
+
+            </div>
+            <div class="columnMenu" id="DataListColumn">
+               <div>
+                  <h3 style="text-align:center">
+                     <strong>
+                        DataList
+                     </strong>
+
+                  </h3>
+
+               </div>
+               <p>
+                  In this section you can test the DropDownList component.
+               </p>
+               <p style="float:right">
+                  <wm-alink class="btn btn-default" runat="server" [Target]="'TestingDemos_WebForms.DataListForm'" [model]="model">
+                     Go to Form &raquo;
+                  </wm-alink>
+
+               </p>
+
+            </div>
+            <div class="columnMenu" id="OtherComponentsColumn">
+               <div>
+                  <h3 style="text-align:center">
+                     <strong>
+                        Other components
+                     </strong>
+
+                  </h3>
+
+               </div>
+               <p>
+                  In this section you cant test the boundField, templateField, hyperLinkField, commandField
+               </p>
+               <p style="float:right">
+                  <wm-alink class="btn btn-default" runat="server" [Target]="'TestingDemos_WebForms.OtherComponents'" [model]="model">
+                     Go to Form &raquo;
+                  </wm-alink>
+
+               </p>
+
+            </div>
+
+         </div>
+
+      </div>
+      <div class="spaceSecondary">
+         <div class="rowMenu">
+            <div class="columnMenu" id="CalendarColumn">
+               <div>
+                  <h3 style="text-align:center">
+                     <strong>
+                        Calendar extender
+                     </strong>
+
+                  </h3>
+
+               </div>
+               <p>
+                  In this section you can test the Calendar component.
+               </p>
+               <p style="float:right">
+                  <wm-alink class="btn btn-default" runat="server" [Target]="'TestingDemos_WebForms.Features.CalendarForm'" [model]="model">
+                     Go to Form &raquo;
+                  </wm-alink>
+
+               </p>
+
+            </div>
+            <div class="columnMenu" id="PopUpColumn">
+               <div>
+                  <h3 style="text-align:center">
+                     <strong>
+                        Pop up extender
+                     </strong>
+
+                  </h3>
+
+               </div>
+               <p>
+                  In this section you can test the Pop up component.
+               </p>
+               <p style="float:right">
+                  <wm-alink class="btn btn-default" runat="server" [Target]="'TestingDemos_WebForms.Features.PopUpForm'" [model]="model">
+                     Go to Form &raquo;
+                  </wm-alink>
+
+               </p>
+
+            </div>
+
+         </div>
+
+      </div>
+
+   </ng-template>
+
+</div>

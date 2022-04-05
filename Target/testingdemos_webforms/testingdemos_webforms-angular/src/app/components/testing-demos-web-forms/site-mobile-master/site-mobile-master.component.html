@@ -1,0 +1,23 @@
+<div *ngIf='model' class='TestingDemos_WebForms_Site_Mobile'>
+   <ng-container [ngTemplateOutlet]="HeadContent_content" [ngTemplateOutletContext]="{model: childModel}">
+   </ng-container>
+   <form wmHtmlControl [model]="model.form1" id="form1">
+      <div>
+         <h1>
+            Mobile Master Page
+         </h1>
+         <ng-container [ngTemplateOutlet]="FeaturedContent_content" [ngTemplateOutletContext]="{model: childModel}">
+         </ng-container>
+         <section class="content-wrapper main-content clear-fix">
+            <ng-container [ngTemplateOutlet]="MainContent_content" [ngTemplateOutletContext]="{model: childModel}">
+            </ng-container>
+
+         </section>
+
+      </div>
+
+   </form>
+   <wm-container>
+   </wm-container>
+
+</div>

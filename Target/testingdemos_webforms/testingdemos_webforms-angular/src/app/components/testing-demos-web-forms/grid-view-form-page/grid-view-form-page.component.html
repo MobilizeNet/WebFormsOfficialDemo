@@ -1,0 +1,62 @@
+<div *ngIf='model' class='TestingDemos_WebForms_GridViewForm'>
+   <ng-template #MainContent let-model='model'>
+      <div class="spacePrincipal">
+         <div>
+            <wm-label id="nameLabel" [model]="model.nameLabel" class="nameLabel">
+               Name:
+            </wm-label>
+            <wm-asp-textbox id="name" [model]="model.name" class="name">
+            </wm-asp-textbox>
+            <wm-required-field-validator id="rev1" [model]="model.rev1" class="rev1" forecolor="Red">
+            </wm-required-field-validator>
+
+         </div>
+         <div>
+            <wm-label id="phoneLabel" [model]="model.phoneLabel" class="phoneLabel">
+               Phone:
+            </wm-label>
+            <wm-asp-textbox id="phone" [model]="model.phone" class="phone">
+            </wm-asp-textbox>
+
+         </div>
+         <div>
+            <wm-label id="mailLabel" [model]="model.mailLabel" class="mailLabel">
+               Email:
+            </wm-label>
+            <wm-asp-textbox id="mail" [model]="model.mail" class="mail">
+            </wm-asp-textbox>
+            <wm-label id="mailLabelConfirm" [model]="model.mailLabelConfirm" class="mailLabelConfirm">
+               Confirm email:
+            </wm-label>
+            <wm-asp-textbox id="mailConfirm" [model]="model.mailConfirm" class="mailConfirm">
+            </wm-asp-textbox>
+            <wm-compare-validator id="equalValidator" [model]="model.equalValidator" class="equalValidator" forecolor="Red">
+            </wm-compare-validator>
+
+         </div>
+         <div>
+            <wm-label id="confirmLabel" [model]="model.confirmLabel" class="confirmLabel">
+               Type confirm:
+            </wm-label>
+            <wm-asp-textbox id="confirm" [model]="model.confirm" class="confirm">
+            </wm-asp-textbox>
+            <wm-custom-validator id="cutomeValidator" [model]="model.cutomeValidator" class="cutomeValidator" forecolor="Red">
+            </wm-custom-validator>
+            <wm-button id="Button1" [model]="model.Button1" class="Button1" text="Add User" [eventsContext]="this" wmClientClick>
+            </wm-button>
+
+         </div>
+         <div style="margin-left: auto; margin-right: auto; text-align: center;">
+            <wm-validation-summary id="valSum" [model]="model.valSum" class="valSum" forecolor="Red">
+            </wm-validation-summary>
+
+         </div>
+         <hr style="display:none">
+         <wm-gridview id="GridView1" [model]="model.GridView1" class="GridView1 centerDivButtons">
+         </wm-gridview>
+
+      </div>
+
+   </ng-template>
+
+</div>
