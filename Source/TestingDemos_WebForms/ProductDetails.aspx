@@ -6,23 +6,23 @@
         </div>
         <div>
             <asp:Label ID="idLabel"  style="display: inline-block;width: 150px; margin-top:5px; text-align: right;" runat="server" Text="Product details:"></asp:Label>
-            <asp:Label ID="idLabelInfo" Font-Bold="true" style="width: 300px;" runat="server"></asp:Label>
+            <asp:Label ID="idLabelInfo" style="width: 300px;" runat="server"></asp:Label>
         </div>
         <div>
             <asp:Label ID="ProductNameLabel"  style="display: inline-block;width: 150px; margin-top:5px; text-align: right;" runat="server" Text="Product name: "></asp:Label>
-            <asp:Label ID="ProductNameInfoLabel" Font-Bold="true" style="width: 300px;" runat="server"></asp:Label>
+            <asp:Label ID="ProductNameInfoLabel" style="width: 300px;" runat="server"></asp:Label>
         </div>
         <div>
             <asp:Label ID="ProductDetailLabel"  style="display: inline-block;width: 150px; margin-top:5px; text-align: right;" runat="server" Text="Product details: "></asp:Label>
-            <asp:Label ID="ProductDetailInfoLabel" Font-Bold="true" style="width: 300px;" runat="server"></asp:Label>
+            <asp:Label ID="ProductDetailInfoLabel" style="width: 300px;" runat="server"></asp:Label>
         </div>
         <div>
             <asp:Label ID="ProductCategoryLabel"  style="display: inline-block;width: 150px; margin-top:5px; text-align: right;" runat="server" Text="Product category: "></asp:Label>
-            <asp:Label ID="ProductCategoryInfoLabel" Font-Bold="true" style="width: 300px;" runat="server"></asp:Label>
+            <asp:Label ID="ProductCategoryInfoLabel" style="width: 300px;" runat="server"></asp:Label>
         </div>
         <div>
             <asp:Label ID="ProductoDetailsLabel"  style="display: inline-block;width: 150px; margin-top:5px; text-align: right;" runat="server" Text="Order details: "></asp:Label>
-            <asp:Label ID="ProductoDetailsInfoLabel" Font-Bold="true" style="width: 300px;" runat="server"></asp:Label>
+            <asp:Label ID="ProductoDetailsInfoLabel" style="width: 300px;" runat="server"></asp:Label>
         </div>
     </div>
 </asp:Content>

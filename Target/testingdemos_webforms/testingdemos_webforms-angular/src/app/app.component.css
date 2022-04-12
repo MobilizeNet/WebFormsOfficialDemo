@@ -19,7 +19,7 @@
   right: 3px;
 }
 
-/deep/ .mat-toolbar.mat-primary {
+.mat-toolbar.mat-primary {
   background: #00adee !important;
   color: #fff;
 }

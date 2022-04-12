@@ -19,7 +19,7 @@
                 </div>
                 <div class="columnButtons">
                     <div>
-                        <asp:Button ID="Button3" runat="server" Text="DelteItem" Width="150px" OnClick="Button3_Click"/>
+                        <asp:Button ID="Button3" runat="server" Text="DeleteItem" Width="150px" OnClick="Button3_Click"/>
                     </div>
                 </div>
             </div>

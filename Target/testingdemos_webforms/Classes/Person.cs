@@ -1,14 +1,23 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
+using Mobilize.WebMap.Common.Attributes;
 
 namespace TestingDemos_WebForms.Classes
 {
-    public class Person
-    {
-        public string Id { get; set; }
-        public string Name { get; set; }
-        public string Email { get; set; }
-    }
+
+   [Observable]
+   public class Person
+   {
+
+      [Intercepted]
+      public string Id { get; set; }
+
+      [Intercepted]
+      public string Name { get; set; }
+
+      [Intercepted]
+      public string Email { get; set; }
+
+   }
 }

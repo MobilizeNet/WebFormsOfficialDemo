@@ -251,9 +251,6 @@ namespace TestingDemos_WebForms
          this.valSum.DisplayMode = Mobilize.Web.UI.Controls.Enums.ValidationSummaryDisplayMode.List;
          this.GridView1.Name = "GridView1";
          this.GridView1.AutoGenerateColumns = false;
-         this.GridView1.BackColor = System.Drawing.Color.Cornsilk;
-         this.GridView1.ForeColor = System.Drawing.Color.DarkOrchid;
-         this.GridView1.Properties().BorderColor = System.Drawing.Color.DarkSlateBlue;
          this.GridView1.Properties().HorizontalAlign = Mobilize.Web.UI.Controls.HorizontalAlign.Center;
          this.GridView1.RowDataBound += new Mobilize.Web.UI.Controls.GridViewRowEventHandler(this.GridView1_RowDataBound);
          this.GridView1.RowCommand += new Mobilize.Web.UI.Controls.GridViewCommandEventHandler(this.GridView1_RowCommand);

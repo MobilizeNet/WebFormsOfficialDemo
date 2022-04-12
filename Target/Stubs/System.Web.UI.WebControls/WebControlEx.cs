@@ -7,10 +7,6 @@ namespace Stub._System.Web.UI.WebControls
 
       public Stub._System.Web.UI.WebControls.BorderStyle BorderStyle { get; set; }
 
-      public Stub._System.Web.UI.WebControls.FontInfo Font { get; }
-
-      public System.Drawing.Color BorderColor { get; set; }
-
    }
 
 }

@@ -17,10 +17,7 @@ namespace TestingDemos_WebForms
             l.Add(new ClassItemsL { Id = 2, Description = "Item 2" });
             l.Add(new ClassItemsL { Id = 3, Description = "Item 3" });
             this.Session["dataItem"] = l;
-            this.DropDownList1.DataValueField = "Id";
-            this.DropDownList1.DataTextField = "Description";
-            this.DropDownList1.DataSource = l;
-            this.DropDownList1.DataBind();
+            UpdatedDropDownList(l);
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -33,19 +30,18 @@ namespace TestingDemos_WebForms
         {
             var dataItems = this.Session["dataItem"] as List<ClassItemsL>;
             dataItems.Add(new ClassItemsL { Id = 4, Description = "Item 4" });
-            this.DropDownList1.DataValueField = "Id";
-            this.DropDownList1.DataTextField = "Description";
-            this.DropDownList1.DataSource = dataItems;
-            this.DropDownList1.DataBind();
+            UpdatedDropDownList(dataItems);
+            this.Session["dataItem"] = dataItems;
         }
 
         protected void Button3_Click(object sender, EventArgs e)
         {
             var dataItems = this.Session["dataItem"] as List<ClassItemsL>;
-            int index = this.DropDownList1.Items.Count;
-            if (index - 1 >= 0)
+            int index = this.DropDownList1.Items.Count - 1;
+            if (index > 0)
             {
-                dataItems.RemoveAt(index - 1);
+                dataItems.RemoveAt(index);
+                UpdatedDropDownList(dataItems);
             }
         }
 
@@ -78,9 +74,14 @@ namespace TestingDemos_WebForms
             dataItems.Add(new ClassItemsL { Id = 1, Description = "Item 1" });
             dataItems.Add(new ClassItemsL { Id = 2, Description = "Item 2" });
             dataItems.Add(new ClassItemsL { Id = 3, Description = "Item 3" });
+            UpdatedDropDownList(dataItems);
+        }
+
+        protected void UpdatedDropDownList(List<ClassItemsL> list)
+        {
             this.DropDownList1.DataValueField = "Id";
             this.DropDownList1.DataTextField = "Description";
-            this.DropDownList1.DataSource = dataItems;
+            this.DropDownList1.DataSource = list;
             this.DropDownList1.DataBind();
         }
     }
