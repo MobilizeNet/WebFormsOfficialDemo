@@ -88,3 +88,10 @@ footer {
 .row.contacto input {
     width: 70%;
 }
+
+.esh-thumbnail {
+    max-width: 120px;
+    height: auto;
+}
+
+

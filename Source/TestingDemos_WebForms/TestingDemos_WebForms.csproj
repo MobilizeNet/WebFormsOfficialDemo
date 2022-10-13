@@ -109,6 +109,19 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="eShopPics\1.png" />
+    <Content Include="eShopPics\10.png" />
+    <Content Include="eShopPics\11.png" />
+    <Content Include="eShopPics\12.png" />
+    <Content Include="eShopPics\2.png" />
+    <Content Include="eShopPics\3.png" />
+    <Content Include="eShopPics\4.png" />
+    <Content Include="eShopPics\5.png" />
+    <Content Include="eShopPics\6.png" />
+    <Content Include="eShopPics\7.png" />
+    <Content Include="eShopPics\8.png" />
+    <Content Include="eShopPics\9.png" />
+    <Content Include="eShopPics\dummy.png" />
     <Content Include="Features\CalendarForm.aspx" />
     <Content Include="Features\DataListForm.aspx" />
     <Content Include="Features\CheckBoxForm.aspx" />
@@ -126,6 +139,7 @@
     <Content Include="Default.aspx" />
     <Content Include="Features\DropDownListForm.aspx" />
     <Content Include="favicon.ico" />
+    <Content Include="Features\eShopGridView.aspx" />
     <Content Include="Features\PopUpForm.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -189,6 +203,9 @@
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Classes\ClassItemsL.cs" />
+    <Compile Include="Classes\eShop\CatalogBrand.cs" />
+    <Compile Include="Classes\eShop\CatalogItem.cs" />
+    <Compile Include="Classes\eShop\CatalogType.cs" />
     <Compile Include="Classes\Person.cs" />
     <Compile Include="Classes\Products.cs" />
     <Compile Include="Features\CalendarForm.aspx.cs">
@@ -240,6 +257,13 @@
     </Compile>
     <Compile Include="Features\DropDownListForm.aspx.designer.cs">
       <DependentUpon>DropDownListForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Features\eShopGridView.aspx.cs">
+      <DependentUpon>eShopGridView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Features\eShopGridView.aspx.designer.cs">
+      <DependentUpon>eShopGridView.aspx</DependentUpon>
     </Compile>
     <Compile Include="Features\PopUpForm.aspx.cs">
       <DependentUpon>PopUpForm.aspx</DependentUpon>
