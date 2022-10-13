@@ -55,7 +55,7 @@
             };
         }
 
-        private CatalogBrand GetBrand(int id)
+        private string GetBrand(int id)
         {
             var brands = new List<CatalogBrand>()
             {
@@ -66,10 +66,10 @@
                 new CatalogBrand() { Id =5, Brand = "Other" }
             };
 
-            return brands.ElementAtOrDefault(id);
+            return brands.ElementAt(id-1).Brand;
         }
 
-        private CatalogType GetType(int id)
+        private string GetType(int id)
         {
             var types = new List<CatalogType>()
             {
@@ -79,7 +79,7 @@
                 new CatalogType() { Id =4, Type = "USB Memory Stick" }
             };
 
-            return types.ElementAtOrDefault(id);
+            return types.ElementAtOrDefault(id-1).Type;
         }
 
         protected void productList_PageIndexChanging(object sender, GridViewPageEventArgs e)

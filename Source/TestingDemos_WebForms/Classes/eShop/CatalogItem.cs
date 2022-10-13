@@ -17,9 +17,9 @@
 
         public string PictureFileName { get; set; }
 
-        public CatalogType CatalogType { get; set; }
+        public string CatalogType { get; set; }
 
-        public CatalogBrand CatalogBrand { get; set; }
+        public string CatalogBrand { get; set; }
 
         public int AvailableStock { get; set; }
 

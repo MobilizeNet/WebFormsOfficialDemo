@@ -13,8 +13,8 @@
                 </asp:TemplateField>
                 <asp:BoundField DataField="Name" HeaderText="Name" />
                 <asp:BoundField DataField="Description" HeaderText="Description" />
-                <asp:BoundField DataField="CatalogBrand.Brand" HeaderText="Brand" />
-                <asp:BoundField DataField="CatalogType.Type" HeaderText="Type" />
+                <asp:BoundField DataField="CatalogBrand" HeaderText="Brand" />
+                <asp:BoundField DataField="CatalogType" HeaderText="Type" />
                 <asp:BoundField DataField="Price" HeaderText="Price" />
                 <asp:BoundField DataField="AvailableStock" HeaderText="Stock" />
                 <asp:BoundField DataField="RestockThreshold" HeaderText="Restock" />
