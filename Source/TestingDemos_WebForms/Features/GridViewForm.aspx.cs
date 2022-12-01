@@ -21,12 +21,15 @@ namespace TestingDemos_WebForms
                 customer1.Name = "Katrina Foster";
                 customer1.Phone = "(172)-498-3515";
                 customer1.Mail = "katrina.foster@example.com";
+                customer1.Age = 25;
                 customer2.Name = "Daisy Gregory";
                 customer2.Phone = "(937)-419-7103";
                 customer2.Mail = "daisy.gregory@example.com";
+                customer2.Age = 40;
                 customer3.Name = "Katherine Reynolds";
                 customer3.Phone = "(217)-411-7103";
                 customer3.Mail = "katherine.reynolds@example.com";
+                customer3.Age = 27;
                 customers.Add(customer1);
                 customers.Add(customer2);
                 customers.Add(customer3);
@@ -43,6 +46,7 @@ namespace TestingDemos_WebForms
             newCustomer.Name = this.name.Text;
             newCustomer.Phone = this.phone.Text;
             newCustomer.Mail = this.mail.Text;
+            newCustomer.Age = int.Parse(this.age.Text);
             custumers.Add(newCustomer);
             this.GridView1.DataSource = custumers;
             this.GridView1.DataBind();
