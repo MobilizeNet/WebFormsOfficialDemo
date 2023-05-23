@@ -8,7 +8,7 @@
             <Columns>
                 <asp:TemplateField HeaderText="Picture">
                     <ItemTemplate>
-                        <asp:Image runat="server" ID="aspimage" ImageUrl='<%# $"/eShopPics/{Eval("PictureFileName")}"%>' CssClass="esh-thumbnail" />
+                        <asp:Image runat="server" ID="aspimage" ImageUrl='<%# "/eShopPics/" + Eval("PictureFileName")%>' CssClass="esh-thumbnail" />
                     </ItemTemplate>
                 </asp:TemplateField>
                 <asp:BoundField DataField="Name" HeaderText="Name" />
